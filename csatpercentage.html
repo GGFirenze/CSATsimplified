@@ -116,8 +116,7 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
    // Add a click event listener to the link
   csat.addEventListener('click', function(event) {
     // Track the link click event with Amplitude and pass additional properties
-    amplitude.getInstance().logEvent('csat_calc_clicked', {debug: true})
-
+    amplitude.getInstance().logEvent('csat_calc_clicked', {debug: true});
 
           amplitude.track('csat_calc_clicked');
     });
