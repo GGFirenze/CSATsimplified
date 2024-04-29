@@ -67,12 +67,12 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
    // Add a click event listener to the link
   stellauno.addEventListener('change', function(event) {
     // Track the link click event with Amplitude and pass additional properties
-    amplitude.getInstance().logEvent('stars_selected', {debug: true})
+    amplitude.getInstance().logEvent('simplified_csat_clicked', {debug: true})
        var eventProperties = {
       value: this.value
     };
 
-          amplitude.track('stars_selected', eventProperties);
+          amplitude.track('simplified_csat_clicked', eventProperties);
     });
   </script>
                 </div>
