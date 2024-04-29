@@ -62,17 +62,17 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
                     <input type="number" id="stars">
  <script type="text/javascript">
 
- var stellauno = document.getElementById('stars');
+ var stellaSimpl = document.getElementById('stars');
 
    // Add a click event listener to the link
-  stellauno.addEventListener('change', function(event) {
+  stellaSimpl.addEventListener('change', function(event) {
     // Track the link click event with Amplitude and pass additional properties
-    amplitude.getInstance().logEvent('simplified_csat_clicked', {debug: true})
+    amplitude.getInstance().logEvent('simplified_csat_field_updated', {debug: true})
        var eventProperties = {
       value: this.value
     };
 
-          amplitude.track('simplified_csat_clicked', eventProperties);
+          amplitude.track('simplified_csat_field_updated', eventProperties);
     });
   </script>
                 </div>
